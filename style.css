@@ -1,0 +1,46 @@
+font-family: Arial;
+margin:0;
+background:#0f172a;
+color:white;
+}
+
+header{
+text-align:center;
+padding:60px;
+background:#020617;
+}
+
+section{
+max-width:900px;
+margin:auto;
+padding:40px;
+}
+
+h2{
+color:#38bdf8;
+}
+
+.skills span{
+background:#1e293b;
+padding:8px 12px;
+margin:5px;
+display:inline-block;
+border-radius:6px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+margin-top:15px;
+border-radius:8px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+a{
+color:#38bdf8;
+}
