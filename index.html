@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <title>Héctor Jurado García | Portafolio</title>
   <style>
-
+html{
+scroll-behavior:smooth
+}
 body{
 font-family: Arial;
 margin:0;
@@ -16,12 +18,12 @@ line-height:1.6;
 header{
 text-align:center;
 padding:60px;
-background:#020617;
+background:linear-gradient(180deg,#020617,#0f172a);
 }
 header img{
 width: 140px;
   border-radius: 50%;
-  margin.bottom:15px;
+  margin-bottom:15px;
   border:3px solid #38bdf8;
 
 }
@@ -31,11 +33,17 @@ max-width:900px;
 margin:auto;
 padding:40px;
 }
-
+h1{
+font-size:20px;
+margin-bottom:10px;
+}
 h2{
 color:#38bdf8;
 margin-bottom:20px;
 }
+p{
+  color:#cbd5f5;
+}    
 
 .skills span{
 background:#1e293b;
@@ -47,6 +55,7 @@ border-radius:6px;
 
 .project{
 background:#1e293b;
+  box-shadow:0 2px 10px rgba(0,0,0,0.3);
 padding:20px;
 margin-top:15px;
 border-radius:8px;
@@ -63,12 +72,15 @@ background:#020617;
 margin-top:30px;
 }
 button{
-  background:#38bdf8
-  border:none;
-  padding:10px 15px
-  border-radius:6px;
-  cursor:pointer;
-  margin-top:10px;
+background:#38bdf8
+border:none;
+padding:10px 15px
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+buton:hover{
+background:#0ea5e9;
 }
 
 a{
@@ -77,10 +89,19 @@ text-decoration:none;
 font-weight:bold;
 }
 nav{
-nackground:#020617;
+background:#020617;
 padding:10px;
 position:sticky;
 top:0;
+}
+nav a{
+  color:white;
+  text-none:none;
+  font-weight:bold;
+  transition:0,3s;
+}
+nav a:hover{
+  color:#38bdf8;
 }
 nav ul{
   display:flex;
@@ -99,8 +120,8 @@ margin:0 20px;
   <li><a href="#tecnologias">Tecnologias</a></li>
   <li><a href="#experiencia">Experiencia</a></li>
   <li><a href="#certificaciones">Certificados</a></li>
-  <li><a href="#proyectos">Proyectos</a></a></li>
-  <li><a href="#contactos">Contacto</a></li>
+  <li><a href="#proyectos">Proyectos</a></li>
+  <li><a href="#contacto">Contacto</a></li>
 </ul>
   </nav>
   <header>
@@ -158,9 +179,12 @@ margin:0 20px;
   <section id="proyectos">
   <h2>Proyectos</h2>
   <div class="project">
-  <h3>Gamering</h3>
+    <h3>Game Deals Tracker</h3>
     <p>Pagina web que analiza varias de las paginas famosas de videojuegos mediante el uso de web scraping
       para detectar ofertas y mostrarlas</p>
+    <p><strong>Mi rol: </strong> Desarrollo con el sistema de scraping y logica de datos</p>
+    <p><strong>Tecnologias usadas: </strong>Python, Web Scraping, Javascript, CSS, HTML</p>
+
   <ul>
     <li>web crawler para recopilar ofertas de juegos </li>
     <li>Visualizacion de ofertas</li>
@@ -170,7 +194,7 @@ margin:0 20px;
   <section id="contacto">
   <h2>Contacto</h2>
   <p>Email: hectordespi232004@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/hector-jurado"></a> Ver perfil</p>
+  <p>GitHub: <a href="https://github.com/hector-jurado"> Ver perfil</p></a>
   </section>
   <footer>
     <p>© 2026 Héctor Jurado García</p>
