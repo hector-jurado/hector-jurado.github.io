@@ -17,7 +17,7 @@ line-height:1.6;
 
 header{
 text-align:center;
-padding:60px;
+padding:80px 20px;
 background:linear-gradient(180deg,#020617,#0f172a);
 }
 header img{
@@ -55,14 +55,17 @@ border-radius:6px;
 
 .project{
 background:#1e293b;
-  box-shadow:0 2px 10px rgba(0,0,0,0.3);
+box-shadow:0 2px 10px rgba(0,0,0,0.3);
 padding:20px;
 margin-top:15px;
 border-radius:8px;
-transition: transform 0.2;
+transition: all 0.3 ease;
+border:1px solid #334155;
 }
 .project:hover{
-  transform:scale(1.02);
+  transform:translateY(-5px);
+  box-shadow:0 2px 10px rgba(0,0,0,0.3);
+
 }
 
 footer{
@@ -111,6 +114,15 @@ nav ul{
 nav li{
 margin:0 20px;
 }
+.fade-in{
+  opacity:0;
+  transform:;translateY(20px);
+  transition:;sll 0.8s ease;
+}
+.fade-in.visible{
+  opacity:1;
+  transform:translateY(0);
+}
 </style>
 </head>
 <body>
@@ -133,7 +145,7 @@ margin:0 20px;
   <button>Descargar CV</button>
   </a>
   </header>
-  <section id="inicio">
+  <section id="inicio" class="fade-in">
   <h2>Sobre mí</h2>
   <p>Programador Junior titulado en Desarrollo de Aplicaciones Multiplataforma. 
     Experiencia en mantenimiento y desarrollo de aplicaciones web y soporte informatico. 
@@ -142,7 +154,7 @@ margin:0 20px;
     
 </section>
 
-  <section id="tecnologias">
+  <section id="tecnologias" class="fade-in">
     <h2>Tecnologias</h2>
     <div class="skills">
       <span>Java</span>
@@ -154,7 +166,7 @@ margin:0 20px;
       <span>Git</span>
     </div>
   </section>
-  <section>
+  <section id="experiencia">
   <h2>Experiencia</h2>
   <div class="project">
   <h3>Tecnico auxiliar de Gestion informatica - Ayuntamiento corbera de llobregat</h3>
@@ -168,7 +180,6 @@ margin:0 20px;
   <section id="certificaciones">
     <h2>Certificaciones</h2>
     <div class="project">
-      <h2>Certificaciones</h2>
       <ul>
         <li>Desarrollo con IA: de 0 a Producción - Big School y Mouredev</li>
         <li>Especialist Microsoft Excel</li>
@@ -176,7 +187,7 @@ margin:0 20px;
       </ul>
     </div>
   </section>
-  <section id="proyectos">
+  <section id="proyectos" class="fade-in">
   <h2>Proyectos</h2>
   <div class="project">
     <h3>Game Deals Tracker</h3>
@@ -201,7 +212,18 @@ margin:0 20px;
     <p>© 2026 Héctor Jurado García</p>
   </footer>
   <script>
-    
+    const elements = document.querySelectorAll(".fade-in")
+    window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+      const position = el.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight /1.3;
+
+      if(position < screenPosition){
+        el.classList.add("visible");
+      }
+    })
+    }
+                           )
   </script>
 </body>
 </html>
