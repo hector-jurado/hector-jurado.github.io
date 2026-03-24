@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
   <title>Héctor Jurado García | Portafolio</title>
   <style>
 html{
@@ -59,7 +60,7 @@ box-shadow:0 2px 10px rgba(0,0,0,0.3);
 padding:20px;
 margin-top:15px;
 border-radius:8px;
-transition: all 0.3 ease;
+transition: all 0.3s ease;
 border:1px solid #334155;
 }
 .project:hover{
@@ -75,14 +76,14 @@ background:#020617;
 margin-top:30px;
 }
 button{
-background:#38bdf8
+background:#38bdf8;
 border:none;
-padding:10px 15px
+padding:10px 15px;
 border-radius:6px;
 cursor:pointer;
 margin-top:10px;
 }
-buton:hover{
+button:hover{
 background:#0ea5e9;
 }
 
@@ -99,9 +100,9 @@ top:0;
 }
 nav a{
   color:white;
-  text-none:none;
+  text-decoration:none;
   font-weight:bold;
-  transition:0,3s;
+  transition:0.3s;
 }
 nav a:hover{
   color:#38bdf8;
@@ -117,7 +118,7 @@ margin:0 20px;
 .fade-in{
   opacity:0;
   transform:;translateY(20px);
-  transition:;sll 0.8s ease;
+  transition:all 0.8s ease;
 }
 .fade-in.visible{
   opacity:1;
@@ -157,16 +158,16 @@ margin:0 20px;
   <section id="tecnologias" class="fade-in">
     <h2>Tecnologias</h2>
     <div class="skills">
-      <span>Java</span>
-      <span>Python</span>
-      <span>JavaScript</span>
-      <span>Flutter</span>
-      <span>Node.js</span>
-      <span>MySQL</span>
-      <span>Git</span>
+      <span><i class="devicon-java-plain"></i>Java</span>
+      <span> <i class="devicon-python-plain"></i>Python</span>
+      <span> <i class="devicon-javascript-plain"></i>JavaScript</span>
+      <span> <i class="devicon-flutter-plain"></i>Flutter</span>
+      <span> <i class="devicon-nodejs-plain"></i>Node.js</span>
+      <span> <i class="devicon-mysql-plain"></i>MySQL</span>
+      <span> <i class="devicon-git-plain"></i>Git</span>
     </div>
   </section>
-  <section id="experiencia">
+  <section id="experiencia" class="fade-in">
   <h2>Experiencia</h2>
   <div class="project">
   <h3>Tecnico auxiliar de Gestion informatica - Ayuntamiento corbera de llobregat</h3>
@@ -177,7 +178,7 @@ margin:0 20px;
   <p>Mantenimiento y analisis de la página web de la empresa usando python y Dart.</p>
   </div>
   </section>
-  <section id="certificaciones">
+  <section id="certificaciones" class="fade-in">
     <h2>Certificaciones</h2>
     <div class="project">
       <ul>
@@ -202,10 +203,10 @@ margin:0 20px;
   </ul>
   </div>
 </section>
-  <section id="contacto">
+  <section id="contacto" class="fade-in">
   <h2>Contacto</h2>
   <p>Email: hectordespi232004@gmail.com</p>
-  <p>Linkedin:<a www.linkedin.com/in/héctor-jurado-garcía>Ver Perfil</p></a>
+  <p>Linkedin:<a href="https://www.linkedin.com/in/hector-jurado-garcia">Ver Perfil</p></a>
   <p>GitHub: <a href="https://github.com/hector-jurado"> Ver Perfil</p></a>
   </section>
   <footer>
@@ -221,9 +222,8 @@ margin:0 20px;
       if(position < screenPosition){
         el.classList.add("visible");
       }
-    })
-    }
-                           )
+    });
+    });
   </script>
 </body>
 </html>
